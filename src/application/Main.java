@@ -10,8 +10,9 @@ public class Main {
 		
 		
 		SellerDao sellerDao = DaoFactory.createSellerDao();//injeção de dependencia
-		Seller seller = sellerDao.findById(3);
 		
+		System.out.println("=== TEST seller findById ===");
+		Seller seller = sellerDao.findById(3);
 		
 		System.out.println(seller);
 	}
